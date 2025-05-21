@@ -82,22 +82,25 @@
             <div class="pt-5 pb-5">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-5">
-                            <img src="images/restaurante.jpg" class=" rounded d-block w-100"
-                                alt="foto do espaco interno do restauraente">
+                        <div class="col-md-5 order-1 order-md-0">
+                            <img src="images/restaurante.jpg" class="rounded d-block w-100"
+                                alt="foto do espaço interno do restaurante">
                         </div>
-                        <div class="col-md-7 mt-3 mt-md-0">
+                        <div class="col-md-7 mt-3 mt-md-0 order-0 order-md-1">
                             <h2 class="section-title">Sobre <span class="text-colored">Rafa Restaurante</span></h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora sint earum nisi! Quod
-                                fugit ducimus, voluptates libero, nisi aspernatur ad placeat saepe impedit itaque
-                                aliquid. Ad tempora ea sequi aliquam.</p>
-                            <h3 class="section-title">Sobre <span class="text-colored">o espaco</span></h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quis voluptatibus corrupti
-                                natus perferendis, </p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                            <h3 class="section-title">Sobre <span class="text-colored">o espaço</span></h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
                             <ul>
-                                <li>Item 1</li>
-                                <li>Item 2</li>
-                                <li>Item 3</li>
+                                <li class="list-unstyled">
+                                    <h5><i class="text-colored bi-check-circle-fill"></i> Área Kids</h5>
+                                </li>
+                                <li class="list-unstyled">
+                                    <h5><i class="text-colored bi-check-circle-fill"></i> Música ao Vivo</h5>
+                                </li>
+                                <li class="list-unstyled">
+                                    <h5><i class="text-colored bi-check-circle-fill"></i> Estacionamento Gratuito</h5>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -397,22 +400,23 @@
                 </div>
                 <div class="row">
                     <div class="col-md-7 mb-5">
-                        <form >
+                        <form>
                             <div class="mt-3">
                                 <label class="form-label fw-bold text-colored" for="nome">Seu nome</label>
-                                <input type="text" id="nome" class="form-control" name="nome"required>
+                                <input type="text" id="nome" class="form-control" name="nome" required>
                             </div>
                             <div class="mt-3">
                                 <label class="form-label fw-bold text-colored" for="email">Seu email</label>
                                 <input type="email" id="email" class="form-control" name="email" required>
                             </div>
                             <div class="mt-3">
-                                <label class="form-label fw-bold text-colored" for="telefone">Seu telefone (opcional) </label>
+                                <label class="form-label fw-bold text-colored" for="telefone">Seu telefone (opcional)
+                                </label>
                                 <input type="tel" id="telefone" class="form-control" name="telefone">
                             </div>
                             <div class="mt-3">
                                 <label class="form-label fw-bold text-colored" for="mensagem">Sua mensagem</label>
-                                <textarea class="form-control" id="mensagem" ></textarea>
+                                <textarea class="form-control" id="mensagem"></textarea>
                             </div>
                             <button type="submit" class="btn fw-bold mt-3">Enviar</button>
                         </form>
@@ -420,10 +424,10 @@
                     <div class="col-md-5">
                         <div class="row">
                             <h3 class="section-title fs-4 text-colored">
-                                <i class="bi bi-hand-thumbs-up-fill" ></i>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
                                 Redes Sociais
                             </h3>
-                            <i class ></i>
+                            <i class></i>
                             <ul class="social-links">
                                 <li class="fs-5">
                                     <a href="#">
@@ -462,29 +466,29 @@
     <script src="./js/jquery.validate.min.js"></script>
     <script src="./js/messages_pt_BR.min.js"></script>
     <script>
-        $(document).ready(function(){
+        $(document).ready(function () {
             $('#telefone').mask(('(00) 00000-0000'))
-        $('form').validate({
-            rules:{
-                nome: {
-                    required: true,
-                },
-                telefone: {
-                    required: true
-                },
-                email: {
-                    required: true, 
-                    email: true
-                }  
-            }
-            ,
-            messages:{
-                nome: 'Por favor, insira seu nome',
-                telefone: 'Por favor, insira seu telefone' ,
-                email: 'Por favor, insira seu email',
-            }
+            $('form').validate({
+                rules: {
+                    nome: {
+                        required: true,
+                    },
+                    telefone: {
+                        required: true
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    }
+                }
+                ,
+                messages: {
+                    nome: 'Por favor, insira seu nome',
+                    telefone: 'Por favor, insira seu telefone',
+                    email: 'Por favor, insira seu email',
+                }
+            })
         })
-    })
     </script>
 </body>
 
